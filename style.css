@@ -1,0 +1,194 @@
+body, html
+{
+  font-family: 'Roboto', sans-serif;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+#bg-hack
+{
+  background-image: url("hyperloop_bg_hack.png");
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: -1000;
+}
+
+button
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+  padding: 10px 18px 10px 18px;
+  outline: none;
+  border-radius: 25px;
+  border: 1px solid;
+  border-color: #FFF;
+  cursor: pointer;
+}
+
+.typeform-widget
+{
+  top: 0;
+  left: -100%;
+  position: fixed;
+}
+
+button:hover
+{
+  background-color: #FFF;
+  color: #000;
+}
+
+h2
+{
+  font-weight: 400;
+  color: #FFF;
+  text-align: center;
+}
+
+p 
+{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-size: 12.5pt;
+  line-height: 1.5em;
+  color: #FFF;
+  text-align: center;
+}
+
+a
+{
+  color: #FFF;
+}
+
+a:hover
+{
+  color: #DDD;
+}
+
+.fullscreen-stretch
+{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -100;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#black_mask
+{
+  opacity: 0.6;
+  background-color: black;
+}
+
+#center_block
+{
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 420px;
+  top: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+}
+
+@media all and (min-width: 600px)
+{
+  #center_block img 
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media all and (max-width: 600px) and (min-width: 0px)
+{
+  #center_block img
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: auto;
+  }
+
+  #bg-hack
+  {
+    visibility: hidden;
+  }
+
+  h2
+  {
+    font-weight: 400;
+    color: #FFF;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .fullscreen-stretch
+  {
+    visibility: hidden;
+  }
+
+  #black_mask
+  {
+    opacity: 0.6;
+    background-color: black;
+    visibility: visible;
+  }
+
+  body
+  {
+    background-image: url("hyperloop_snapshot.png");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+  }
+
+  #center_block
+  {
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+  }
+
+  button
+  {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    color: #FFF;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    padding: 7px 14px 7px 14px;
+    outline: none;
+    border-radius: 25px;
+    border: 1px solid;
+    border-color: #FFF;
+    cursor: pointer;
+  }
+}
